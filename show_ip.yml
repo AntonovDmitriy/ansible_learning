@@ -1,0 +1,7 @@
+---
+- name: show ip of hosts
+  hosts: all
+  tasks:
+    - name: show IP address
+      debug:
+        msg: IP address {{ansible_facts.default_ipv4.address}}

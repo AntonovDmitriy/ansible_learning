@@ -1,0 +1,6 @@
+---
+- name: use galxy nginx role
+  gather_facts: yes
+  hosts: all
+  roles:
+    - role: geerlingguy.nginx
